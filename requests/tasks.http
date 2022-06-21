@@ -1,0 +1,29 @@
+###
+GET http://localhost:3000/api/tasks
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "booleanos",
+    "description": "probando los condicionales de done",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+
+DELETE http://localhost:3000/api/tasks/6228e14ebf94e863ebf08121
+
+###
+GET http://localhost:3000/api/tasks/6228e17abf94e863ebf08124
+
+###
+PUT http://localhost:3000/api/tasks/6228e17abf94e863ebf08124
+Content-Type: application/json
+
+{
+    "title": "booleanos ya probados y cargados"
+}
