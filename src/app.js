@@ -1,6 +1,7 @@
 import express from 'express';
 import morgan from 'morgan'
 import taskRoutes from './routes/tasks.routes';
+import usersRoutes from './routes/users.router';
 
 const app = express();
 
@@ -18,5 +19,6 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/tasks', taskRoutes);
+app.use('/api/users', usersRoutes);
 
 export default app

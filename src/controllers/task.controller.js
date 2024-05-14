@@ -1,4 +1,3 @@
-import res from 'express/lib/response'
 import Task from '../models/Task'
 
 export const findAllTasks = async (req, res) => {
